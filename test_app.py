@@ -3,7 +3,7 @@ from app import calculate_total
 
 
 def test_calculate_total():
-    assert calculate_total(10, 5) == 999
+    assert calculate_total(10, 5) == 50
 
 
 def test_zero_quantity():

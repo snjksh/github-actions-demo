@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My First Website</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f0f4f8;
+            padding: 50px;
+        }
+
+        h1 {
+            color: #0078d4;
+        }
+
+        .card {
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            max-width: 500px;
+            margin: 30px auto;
+            box-shadow: 0 2px 8px #cccccc;
+        }
+
+        button {
+            background: #0078d4;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Welcome to My Website!</h1>
+
+    <div class="card">
+        <h2>My First CI/CD Project</h2>
+        <p>This website is hosted on GitHub Pages.</p>
+        <p>Deployed automatically using GitHub Actions.</p>
+
+        <button onclick="showMessage()">
+            Click Me
+        </button>
+
+        <p id="message"></p>
+    </div>
+
+    <script>
+        function showMessage() {
+            document.getElementById("message").textContent =
+                "Congratulations! Your website is working.";
+        }
+    </script>
+</body>
+</html>
